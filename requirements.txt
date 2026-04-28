@@ -1,0 +1,14 @@
+# Thư viện quan trọng nhất để chạy YOLO
+ultralytics
+
+# Thư viện để tải dữ liệu từ Roboflow
+roboflow
+
+# Thư viện xử lý hình ảnh và video
+opencv-python
+
+# Thư viện vẽ biểu đồ (để xem độ chính xác của AI)
+matplotlib
+
+# Thư viện xử lý tính toán số học
+numpy
