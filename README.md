@@ -2,6 +2,8 @@
 AI
 🚦 Dự án: Nhận diện Biển báo Giao thông Việt Nam (6 Nhóm)Dự án này sử dụng mô hình YOLOv8/v11 để nhận diện và phân loại các nhóm biển báo giao thông tại Việt Nam. Toàn bộ quy trình từ gán nhãn đến huấn luyện được thực hiện trên Roboflow và Google Colab.
 
+https://app.roboflow.com/join/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3Jrc3BhY2VJZCI6IlpjMDBOM3hIZEpYd3hBNTlZbktWVlhSNzJnRDIiLCJyb2xlIjoib3duZXIiLCJpbnZpdGVyIjoidnVoYW5hbTMwMDUyMDA0QGdtYWlsLmNvbSIsImlhdCI6MTc3NzM2MDI3MX0.4Hp1F_WCbCIOStjtoh1PxYqfy4TXtGDp7AfYvEEQ6vA
+
 📂 Cấu trúc thư mục (GitHub)Các thành viên tuân thủ cấu trúc sau khi đẩy code lên:
 PlaintextProject_Traffic_Sign/
 ├── notebooks/
@@ -13,11 +15,12 @@ PlaintextProject_Traffic_Sign/
 🛠 Quy trình làm việc (Workflow)
 1. Quản lý dữ liệu (Roboflow)Link Workspace: 
 Danh sách 6 nhãn (Labels):
-prohibitory: Biển báo cấm.
-danger: Biển báo nguy hiểm.
-mandatory: Biển hiệu lệnh.informational: Biển chỉ dẫn.
-supplemental: Biển phụ.
-unclear: Biển mờ, không rõ loại.
+  prohibitory: Biển báo cấm.
+  danger: Biển báo nguy hiểm.
+  mandatory: Biển hiệu lệnh.
+  informational: Biển chỉ dẫn.
+  supplemental: Biển phụ.
+  unclear: Biển mờ, không rõ loại.
 Lưu ý gán nhãn: Vẽ khung (Bounding Box) sát mép biển báo, không để dư quá nhiều nền.
 2. Huấn luyện mô hình (Google Colab)
 Sử dụng file notebooks/train_yolo.ipynb.
